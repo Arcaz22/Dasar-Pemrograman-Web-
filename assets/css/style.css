@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f0f7f8;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.right:hover,
+.nav-item a:hover {
+  color: #d14216;
+}
+
+span {
+  color: #041562;
+}
+
+header {
+  margin-bottom: 0.3rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.nav-list {
+  background: #cfd8dc;
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+  transition: all 200ms ease-in;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.jumbotron {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/jumbotron.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000;
+}
+
+.jumbotron .jumbotron-detail {
+  width: 70%;
+}
+
+.jumbotron .jumbotron-detail h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron .jumbotron-detail a {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+article {
+  width: 70%;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.content {
+  margin: 2rem auto;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.article-image img {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  border-radius: 20px 20px 0 0;
+  justify-items: center;
+}
+
+.article-card {
+  background: #ffffff;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+}
+
+.article-content {
+  padding: 2rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.article-content .card-title {
+  margin: 1rem 0;
+}
+
+.article-content .card-detail {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.wrapper {
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #cfd8dc;
+}
+
+.profil .profil-pic {
+  width: 200px;
+  height: 200px;
+  background-image: url('../img/me.png');
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.profil .profil-detail {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.profil .profil-detail p {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background: #cfd8dc;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .profil {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .jumbotron {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 1200px;
+  }
+
+  .profil {
+    display: flex;
+    flex-direction: row;
+  }
+}

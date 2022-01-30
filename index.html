@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#"><img src="assets/img/Logo.png" width="30" height="30"></a>
+        </li>
+        <li class="nav-item">
+          <a href="#jumbotron">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#content">Place</a>
+        </li>
+        <li class="nav-item">
+          <a href="#profil">About Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JUMBOTRON -->
+  <section id="jumbotron" class="jumbotron">
+    <div class="jumbotron-detail">
+      <h1>Travel<span>ing</span></h1>
+      <a href="#content"><img src="assets/img/down-arrow.png"></a>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main id="content" class="content">
+    <section class="article-container">
+      <article class="article-card">
+        <figure class="article-image">
+          <img src="assets/img/RajaAmpat.jpg">
+        </figure>
+        <div class="article-content">
+          <h3 class="card-title">Raja Ampat</h3>
+          <p class="card-detail">Raja Ampat merupakan kepulauan yang berada di Kabupaten Raja Ampat, Provinsi Papua Barat</p>
+          <a href="#content" class="right" onclick="italic()">more</a>
+        </div>
+      </article>
+      <article class="article-card">
+        <figure class="article-image">
+          <img src="assets/img/Bali.jpg">
+        </figure>
+        <div class="article-content">
+          <h3 class="card-title">Bali</h3>
+          <p class="card-detail">Bali adalah sebuah provinsi di Indonesia yang ibu kotanya berada di Denpasar</p>
+          <a href="#content" class="right" onclick="italic()">more</a>
+        </div>
+      </article>
+      <aside id="profil" class="profil">
+        <div class="wrapper">
+          <div class="profil-pic">
+          </div>
+          <div class="profil-detail">
+            <p onmouseover="lengkap(this)" onmouseout="nama(this)">Me</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+    <!-- FOOTER -->
+  <footer>
+    <p>Dasar Pemrograman Web &copy; 2022, Dicoding</p>
+  </footer>
+  
+<script src="assets/js/script.js"></script>
+</body>
+</html>
